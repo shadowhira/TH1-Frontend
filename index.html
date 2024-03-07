@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Survey form</title>
+    <link rel="stylesheet" href="./Style/style.css" />
+  </head>
+  <body onload="LoadData()">
+    <div class="boc" id="top">
+      <div class="content">
+        <h2>Table of content</h2>
+        <ul class="ulcontent">
+          <li>
+            <a href="#top">Survey Form</a>
+          </li>
+          <li>
+            <a href="#type1">Type 1: True/False</a>
+          </li>
+          <li>
+            <a href="#type2">Type 2: Chose one</a>
+          </li>
+          <li>
+            <a href="#type3">Type 3: Multiple choice</a>
+          </li>
+          <li>
+            <a href="#type4">Type 4: Text</a>
+          </li>
+          <li>
+            <a href="#submit">Submit</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <form id="question-form">
+      <h1>Survey Form</h1>
+      <h3>Description:</h3>
+      <div class="description">
+        <pre>
+* The purpose of this survey is to gather information about people's preferences and opinions about cars. 
+* The survey is intended for a general audience and will take approximately 10 minutes to complete.
+* The survey consists of 40 questions with 4 types:
+  + True/False question
+  + Chose one answer
+  + Multiple choice
+  + Text
+* Your answer will help us a lot.
+            </pre
+        >
+      </div>
+
+      <h3>Type your infomation:</h3>
+      <div class="infor">
+        <label>
+          <span> Name </span>
+          <input type="text" name="name" id="name" placeholder="Jack" />
+        </label>
+        <label>
+          <span> Date of bird </span>
+          <input type="date" name="date" id="date" />
+        </label>
+        <label>
+          <span> Citizen identity card </span>
+          <input
+            type="text"
+            name="cccd"
+            id="cccd"
+            placeholder="0012001200478"
+          />
+        </label>
+        <label>
+          <span> Address </span>
+          <input type="text" name="addr" id="addr" placeholder="Hanoi-PhuTho" />
+        </label>
+      </div>
+      <ul id="question-list"></ul>
+   
+      <button type="submit" id="submit">Submit</button>
+      <p id="score"></p>
+    </form>
+    
+    <!-- 
+    <div id="confirm-submit-popup" class="hidden popup">
+        <p>Submit, Are you sure?</p>
+        <button id="confirm-yes">Submit</button>
+        <button id="confirm-no">Back</button>
+      </div>
+    
+      <div id="result-popup" class="hidden popup">
+        <p>Submited</p>
+        <p id="score"></p>
+      </div> -->
+
+      <!-- <div class="bao">
+
+          <div id="survey-results" style="display: none;"></div>
+      </div> -->
+    <script src="./Script/script.js"></script>
+  </body>
+</html>
